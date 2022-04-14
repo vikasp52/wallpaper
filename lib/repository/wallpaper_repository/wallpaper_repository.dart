@@ -16,9 +16,7 @@ class WallpaperRepository {
       },
     );
 
-    print('response: ${response.body}');
     if (response.statusCode == 200) {
-      print('response: ${response.body}');
       var parsed = jsonDecode(response.body);
 
       Wallpaper wallpaper = Wallpaper.fromJson(parsed);

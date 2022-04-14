@@ -35,9 +35,7 @@ class FullImage extends StatelessWidget {
                 height: 10,
               ),
               InkWell(
-                onTap: () {
-                  _controller.setWallpaper(url);
-                },
+                onTap: () => _controller.setWallpaper(url),
                 child: Container(
                   height: 60,
                   width: double.infinity,

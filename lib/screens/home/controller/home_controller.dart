@@ -17,14 +17,9 @@ class HomeController extends GetxController {
     isLoading(true);
     try {
       var images = await WallpaperRepository.fetchImages();
-
-      print('images: ${images.length}');
-
       if (images.isNotEmpty) {
         photos.value = images;
       }
-
-      print('images1: ${photos.length}');
     } finally {
       isLoading(false);
     }
